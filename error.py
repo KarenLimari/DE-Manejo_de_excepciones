@@ -4,7 +4,7 @@ class DimensionError (Exception):
 
     Esta excepción se utiliza para indicar que un valor de dimensión (ancho o alto) está fuera del rango permitido.
 
-    Attributes
+    Atributos
     ----------
     mensaje : str
         Mensaje de error proporcionado al crear la excepción.
@@ -18,7 +18,7 @@ class DimensionError (Exception):
         """
         Inicializa una nueva instancia de DimensionError.
 
-        Parameters
+        Parámetros
         ----------
         mensaje : str
             Mensaje de error que describe el problema.
