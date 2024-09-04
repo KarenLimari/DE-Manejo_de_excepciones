@@ -47,7 +47,7 @@ class Foto():
         """
         Establece el ancho de la foto, verificando que esté dentro del rango permitido.
 
-        Parameters
+        Parámetros
         ----------
         ancho : int
             Nuevo valor para el ancho de la foto.
@@ -78,7 +78,7 @@ class Foto():
         """
         Establece el alto de la foto, verificando que esté dentro del rango permitido.
 
-        Parameters
+        Parámetros
         ----------
         alto : int
             Nuevo valor para el alto de la foto.
