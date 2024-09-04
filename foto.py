@@ -1,3 +1,5 @@
+from error import DimensionError
+
 class Foto():
     MAX = 2500
 
@@ -12,6 +14,8 @@ class Foto():
 
     @ancho.setter
     def ancho(self, ancho) -> None:
+        if ancho < 1 or ancho >self.MAX:
+            raise DimensionError("Ancho fuera de rango", ancho, self.MAX)
         self.__ancho = ancho
 
     @property
@@ -20,4 +24,6 @@ class Foto():
 
     @alto.setter
     def alto(self, alto) -> None:
+        if alto < 1 or alto > self.MAX:
+            raise DimensionError("Alto fuera de rango", alto, self.MAX) 
         self.__alto = alto
